@@ -1,7 +1,6 @@
 package com.prueba.SETI.application.service;
 
 import com.prueba.SETI.application.exception.NotFoundException;
-import com.prueba.SETI.domain.model.Franchise;
 import com.prueba.SETI.domain.model.Product;
 import com.prueba.SETI.domain.ports.BranchRepositoryPort;
 import com.prueba.SETI.domain.ports.ProductRepositoryPort;
@@ -11,7 +10,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -31,19 +29,11 @@ public class ProductService {
                 )
                 .flatMap(branch ->
                         sequenceGeneratorPort.nextProductId()
-                                .map(productId ->
-                                        new Product(productId, name, stock)
-                                )
-                                .flatMap(product ->
-                                        productRepositoryPort.save(branchId, product)
-                                )
+                                .map(productId -> new Product(productId, name, stock))
+                                .flatMap(product -> productRepositoryPort.save(branchId, product))
                 )
-                .doOnNext(product ->
-                        log.info("Producto creado con id [{}]", product.getId())
-                )
-                .doOnError(error ->
-                        log.error("Error creando producto", error)
-                );
+                .doOnNext(product -> log.info("Producto creado con id [{}]", product.getId()))
+                .doOnError(error -> log.error("Error creando producto", error));
     }
 
     public Mono<Product> updateStock(String productId, int newStock) {

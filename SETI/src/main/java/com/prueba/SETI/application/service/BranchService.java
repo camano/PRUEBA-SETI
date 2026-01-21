@@ -26,12 +26,8 @@ public class BranchService {
                 .doOnSubscribe(s -> log.info("Creando sucursal [{}] para franquicia [{}]", branchName, franchiseId))
                 .flatMap(franchise ->
                         sequenceGeneratorPort.nextBranchId()
-                                .map(branchId ->
-                                        new Branch(branchId, branchName)
-                                )
-                                .flatMap(branch ->
-                                        branchRepository.save(franchiseId, branch)
-                                )
+                                .map(branchId -> new Branch(branchId, branchName))
+                                .flatMap(branch -> branchRepository.save(franchiseId, branch))
                 )
                 .doOnNext(branch ->log.info("Sucursal creada con id [{}]", branch.getId()))
                 .doOnError(error -> log.error("Error creando sucursal", error));
