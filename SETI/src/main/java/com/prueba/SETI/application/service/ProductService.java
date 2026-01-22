@@ -21,7 +21,6 @@ public class ProductService {
 
     public Mono<Product> execute(String branchId, String name, int stock) {
 
-
         return branchRepositoryPort.findById(branchId)
                 .switchIfEmpty(Mono.error(new NotFoundException("Branch not found")))
                 .doOnSubscribe(s ->
@@ -71,4 +70,5 @@ public class ProductService {
                 .doOnNext(f -> log.info("Nuevo nombre [{}] para producto [{}]", f.getName(), productId))
                 .doOnError(e -> log.error("Error actualizando producto", e));
     }
+
 }
