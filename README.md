@@ -46,6 +46,19 @@ src/
 > Nota: No se usa JPA; las inserciones se hacen **explícitamente con DatabaseClient** para respetar los IDs personalizados.
 
 ---
+## 🔗 Requerimientos principales 
+
+1. Exponer endpoint para agregar una nueva franquicia.
+2. Exponer endpoint para agregar una nueva sucursal a una franquicia.
+3. Exponer endpoint para agregar un nuevo producto a una sucursal.
+4. Exponer endpoint para eliminar un nuevo producto a una sucursal.
+5. Exponer endpoint para modificar el stock de un producto.
+6. Exponer endpoint que permita mostrar cual es el producto que más stock tiene por
+   sucursal para una franquicia puntual. Debe retornar un listado de productos que
+   indique a que sucursal pertenece.
+7. Exponer endpoint que permita actualizar el nombre de una franquicia.
+8. Exponer endpoint que permita actualizar el nombre de una sucursal.
+9. Exponer endpoint que permita actualizar el nombre de un producto.
 
 ## 🔗 Endpoints principales
 
@@ -65,17 +78,19 @@ src/
 
 ## 📊 Documentación Swagger
 
-- URL: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
-- Genera documentación automática para todos los endpoints.
+- URL: [http://localhost:8080/webjars/swagger-ui/index.html](http://localhost:8080/webjars/swagger-ui/index.html)
 - Permite probar requests directamente desde el navegador.
 
 ---
 
 ## Levantar Proyecto con docker compose
+- En la raiz se encuentra un documento para poder ejecutarlo en local 
 - mvn clean install -- ejecuta el jar**
 - docker-compose up -- se ejecuta las imagenes de la base de datos y app**
+- En la raiz del proyecto encuentran la coleccion de postman
 
-En la raiz del proyecto encuentran la coleccion de postman
+
+
 
 
 
