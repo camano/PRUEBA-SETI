@@ -75,6 +75,7 @@ src/
 - mvn clean install -- ejecuta el jar**
 - docker-compose up -- se ejecuta las imagenes de la base de datos y app**
 
+En la raiz del proyecto encuentran la coleccion de postman
 
 
 
