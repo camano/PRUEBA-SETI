@@ -4,15 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="485e3122-4eac-424e-8a7b-1105b55da0ce" name="Changes" comment="se ajusto el readme">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PRUEBA-SETI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="1c1e7e96-a5f7-4366-bfcf-bbd6a72258e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/SetiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/api/controller/FranchiseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/api/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/api/controller/branchController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/api/request/CreateBranchRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/api/request/CreateFranchiseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/api/request/CreateProductRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/api/request/UpdateNameRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/api/request/UpdateStockRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/api/response/ProductStockResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/service/BranchService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/service/FranchiseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/application/service/StockService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/domain/model/Branch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/domain/model/Franchise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/domain/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/domain/ports/BranchRepositoryPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/domain/ports/FranchiseRepositoryPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/domain/ports/ProductRepositoryPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/domain/ports/SequenceGeneratorPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/adapter/BranchRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/adapter/FranchiseRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/adapter/ProductRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/adapter/SequenceGeneratorAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/entity/BranchEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/entity/FranchiseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/entity/ProductEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/repository/BranchR2dbcRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/repository/FranchiseR2dbcRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/adapter/persistence/repository/ProductR2dbcRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/java/com/prueba/SETI/infrastructure/config/StartupCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/test/java/com/prueba/SETI/application/api/controller/FranchiseControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/test/java/com/prueba/SETI/application/service/BranchServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/test/java/com/prueba/SETI/application/service/FranchiseServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/test/java/com/prueba/SETI/application/service/ProductServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SETI/src/test/java/com/prueba/SETI/application/service/StockServiceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,247 +65,170 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
-        <option value="Interface" />
-        <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="feature/pruebas-unitarias" />
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="feature/pruebas-unitarias" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;camano&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "camano"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/camano/PRUEBA-SETI.git&quot;,
-    &quot;accountId&quot;: &quot;7881fe79-2ef3-4819-b878-1fe71b60b803&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/camano/PRUEBA-SETI.git",
+    "accountId": "7881fe79-2ef3-4819-b878-1fe71b60b803"
   }
-}</component>
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="38XtjQDmJEFj2mxp2s43Ub0zdG4" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="38yxUNmPGVG08jLCohO2i9mZzPq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.SetiApplication.executor": "Run",
-    "JUnit.BranchServiceTest.shouldCreateBranchSuccessfully.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenBranchNotFound.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenFranchiseNotFound.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenNameIsBlank.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenSaveFails.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenSequenceFails.executor": "Run",
-    "JUnit.BranchServiceTest.shouldUpdateBranchNameSuccessfully.executor": "Run",
-    "JUnit.FranchiseControllerTest.shouldCreateFranchiseSuccessfully.executor": "Run",
-    "JUnit.FranchiseControllerTest.shouldUpdateFranchiseNameSuccessfully.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldCreateFranchiseSuccessfully.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldFailWhenFranchiseNotFound.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldFailWhenNameIsEmpty.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldFailWhenRepositoryFails.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldFailWhenSequenceGeneratorFails.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldUpdateFranchiseNameSuccessfully.executor": "Run",
-    "JUnit.ProductServiceTest.shouldCreateProductSuccessfully.executor": "Run",
-    "JUnit.ProductServiceTest.shouldDeleteProductSuccessfully.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenBranchNotFound.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenDeleteFails.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenNameIsBlank.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenProductNotFound.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenProductNotFound2.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenProductNotFound3.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenSaveFails.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenSequenceFails.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenStockIsNegative.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenUpdateFails.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenUpdateFails2.executor": "Run",
-    "JUnit.ProductServiceTest.shouldUpdateProductNameSuccessfully.executor": "Run",
-    "JUnit.ProductServiceTest.shouldUpdateStockSuccessfully.executor": "Run",
-    "JUnit.StockServiceTest.shouldReturnEmptyWhenFranchiseHasNoBranches.executor": "Run",
-    "JUnit.StockServiceTest.shouldReturnTopStockProductPerBranch.executor": "Run",
-    "JUnit.StockServiceTest.shouldSkipBranchWithoutProducts.executor": "Run",
-    "Maven.SETI [clean].executor": "Run",
-    "Maven.SETI [install].executor": "Run",
-    "Maven.SETI [mvn,clean,mvn...].executor": "Run",
-    "Maven.SETI [mvn,clean,test].executor": "Run",
-    "Maven.SETI [mvn,dependency:tree,|,grep...].executor": "Run",
-    "Maven.SETI [mvn...].executor": "Run",
-    "Maven.SETI [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
-    "Maven.SETI [package].executor": "Run",
+    "JUnit.AddBranchUseCaseTest.executor": "Run",
+    "JUnit.AddBranchUseCaseTest.shouldCreateBranchSuccessfully.executor": "Run",
+    "JUnit.AddBranchUseCaseTest.shouldFailWhenFranchiseNotFound.executor": "Run",
+    "JUnit.AddFranchiseUseCaseTest.executor": "Run",
+    "JUnit.AddProductUseCaseTest.executor": "Run",
+    "JUnit.DeleteProductUseCaseTest.executor": "Run",
+    "JUnit.GetStockTopFranchiseUseCaseTest.executor": "Run",
+    "JUnit.UpdateNameBranchUseCaseTest.executor": "Run",
+    "JUnit.UpdateNameFranchiseUseCaseTest.executor": "Run",
+    "JUnit.UpdateNameProductUseCaseTest.executor": "Run",
+    "JUnit.UpdateNameProductUseCaseTest.shouldFailWhenNameIsBlank.executor": "Run",
+    "JUnit.UpdateStockUseCaseTest.executor": "Run",
     "Maven.SETI [test].executor": "Run",
+    "Maven.SETI [verify].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.SetiApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DEV/PRUEBA-SETI",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "D:/DEV/PRUEBA-SETI/src/main/java/com/prueba/SETI/infrastructure/entryPoint"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DEV\PRUEBA-SETI\SETI" />
+      <recent name="D:\DEV\PRUEBA-SETI\src\main\java\com\prueba\SETI\infrastructure\entryPoint" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.prueba.SETI.application.api.controller" />
-      <recent name="com.prueba.SETI.application.service" />
+      <recent name="com.prueba.SETI.domain.useCase.getstocktopfranchise" />
+      <recent name="com.prueba.SETI.domain.useCase.deleteproduct" />
+      <recent name="com.prueba.SETI.domain.useCase.updatestock" />
+      <recent name="com.prueba.SETI.domain.useCase.updatenameproduct" />
+      <recent name="com.prueba.SETI.domain.useCase.addproduct" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SetiApplication">
-    <configuration name="SetiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.SetiApplication" />
+  <component name="RunManager" selected="Spring Boot.SetiApplication">
+    <configuration name="DeleteProductUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SETI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.api.controller.*" />
+          <option name="PATTERN" value="com.prueba.SETI.domain.useCase.deleteproduct.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.prueba.SETI.domain.useCase.deleteproduct" />
+      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.domain.useCase.deleteproduct.DeleteProductUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FranchiseControllerTest.shouldCreateFranchiseSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetStockTopFranchiseUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SETI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.api.controller.*" />
+          <option name="PATTERN" value="com.prueba.SETI.domain.useCase.getstocktopfranchise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.prueba.SETI.application.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.application.api.controller.FranchiseControllerTest" />
-      <option name="METHOD_NAME" value="shouldCreateFranchiseSuccessfully" />
+      <option name="PACKAGE_NAME" value="com.prueba.SETI.domain.useCase.getstocktopfranchise" />
+      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.domain.useCase.getstocktopfranchise.GetStockTopFranchiseUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateNameProductUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SETI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prueba.SETI.domain.useCase.updatenameproduct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.prueba.SETI.domain.useCase.updatenameproduct" />
+      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.domain.useCase.updatenameproduct.UpdateNameProductUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateNameProductUseCaseTest.shouldFailWhenNameIsBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SETI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prueba.SETI.domain.useCase.updatenameproduct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.prueba.SETI.domain.useCase.updatenameproduct" />
+      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.domain.useCase.updatenameproduct.UpdateNameProductUseCaseTest" />
+      <option name="METHOD_NAME" value="shouldFailWhenNameIsBlank" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FranchiseControllerTest.shouldUpdateFranchiseNameSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SetiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="SETI" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.prueba.SETI.SetiApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.api.controller.*" />
+          <option name="PATTERN" value="com.prueba.SETI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.prueba.SETI.application.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.application.api.controller.FranchiseControllerTest" />
-      <option name="METHOD_NAME" value="shouldUpdateFranchiseNameSuccessfully" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StockServiceTest.shouldReturnEmptyWhenFranchiseHasNoBranches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SETI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.prueba.SETI.application.service" />
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.application.service.StockServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnEmptyWhenFranchiseHasNoBranches" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockServiceTest.shouldReturnTopStockProductPerBranch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SETI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.prueba.SETI.application.service" />
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.application.service.StockServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnTopStockProductPerBranch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SETI [mvn,clean,test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="cmdOptions" />
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="mvn" />
-                <option value="clean" />
-                <option value="test" />
-              </list>
-            </option>
-            <option name="multimoduleDir" />
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/SETI" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.SetiApplication" />
-      <item itemvalue="JUnit.FranchiseControllerTest.shouldCreateFranchiseSuccessfully" />
-      <item itemvalue="JUnit.FranchiseControllerTest.shouldUpdateFranchiseNameSuccessfully" />
-      <item itemvalue="JUnit.StockServiceTest.shouldReturnEmptyWhenFranchiseHasNoBranches" />
-      <item itemvalue="JUnit.StockServiceTest.shouldReturnTopStockProductPerBranch" />
-      <item itemvalue="Maven.SETI [mvn,clean,test]" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SetiApplication" />
-        <item itemvalue="JUnit.FranchiseControllerTest.shouldUpdateFranchiseNameSuccessfully" />
-        <item itemvalue="JUnit.FranchiseControllerTest.shouldCreateFranchiseSuccessfully" />
-        <item itemvalue="JUnit.StockServiceTest.shouldReturnTopStockProductPerBranch" />
-        <item itemvalue="JUnit.StockServiceTest.shouldReturnEmptyWhenFranchiseHasNoBranches" />
+        <item itemvalue="Spring Boot.SetiApplication" />
+        <item itemvalue="JUnit.GetStockTopFranchiseUseCaseTest" />
+        <item itemvalue="JUnit.UpdateNameProductUseCaseTest.shouldFailWhenNameIsBlank" />
+        <item itemvalue="JUnit.UpdateNameProductUseCaseTest" />
+        <item itemvalue="JUnit.DeleteProductUseCaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -275,76 +241,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="485e3122-4eac-424e-8a7b-1105b55da0ce" name="Changes" comment="" />
-      <created>1768957877564</created>
+      <changelist id="1c1e7e96-a5f7-4366-bfcf-bbd6a72258e4" name="Changes" comment="" />
+      <created>1769785626750</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1768957877564</updated>
+      <updated>1769785626750</updated>
     </task>
-    <task id="LOCAL-00001" summary="se subio el docker">
-      <option name="closed" value="true" />
-      <created>1769034691919</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1769034691919</updated>
-    </task>
-    <task id="LOCAL-00002" summary="se subio el readme y swagger con la documentacion">
-      <option name="closed" value="true" />
-      <created>1769040406135</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1769040406135</updated>
-    </task>
-    <task id="LOCAL-00003" summary="se subio el readme y swagger con la documentacion">
-      <option name="closed" value="true" />
-      <created>1769041909518</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1769041909518</updated>
-    </task>
-    <task id="LOCAL-00004" summary="se subieron las pruebas unitarias">
-      <option name="closed" value="true" />
-      <created>1769047843472</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1769047843472</updated>
-    </task>
-    <task id="LOCAL-00005" summary="se subieron las pruebas unitarias">
-      <option name="closed" value="true" />
-      <created>1769049909262</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1769049909262</updated>
-    </task>
-    <task id="LOCAL-00006" summary="se ajusto el readme">
-      <option name="closed" value="true" />
-      <created>1769049980774</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1769049980774</updated>
-    </task>
-    <task id="LOCAL-00007" summary="se ajusto el readme">
-      <option name="closed" value="true" />
-      <created>1769050090552</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1769050090552</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="se subio el docker" />
-    <MESSAGE value="se subio el readme y swagger con la documentacion" />
-    <MESSAGE value="se subieron las pruebas unitarias" />
-    <MESSAGE value="se ajusto el readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="se ajusto el readme" />
   </component>
 </project>
