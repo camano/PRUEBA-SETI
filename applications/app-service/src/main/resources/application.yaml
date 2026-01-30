@@ -1,0 +1,32 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "prueba-setti"
+  devtools:
+    add-properties: false
+  h2:
+    console:
+      enabled: true
+      path: "/h2"
+  profiles:
+    include: null
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,prometheus"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+cors:
+  allowed-origins: "http://localhost:4200,http://localhost:8080"
+adapters:
+  r2dbc:
+    host: localhost
+    port: 5432
+    database: seti_db
+    schema: public
+    username: postgres
+    password: root

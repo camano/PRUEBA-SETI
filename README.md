@@ -46,7 +46,7 @@ src/
 > Nota: No se usa JPA; las inserciones se hacen **explícitamente con DatabaseClient** para respetar los IDs personalizados.
 
 ---
-## 🔗 Requerimientos principales 
+## 🔗 Requerimientos principales
 
 1. Exponer endpoint para agregar una nueva franquicia.
 2. Exponer endpoint para agregar una nueva sucursal a una franquicia.

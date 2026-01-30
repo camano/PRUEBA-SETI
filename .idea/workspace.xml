@@ -4,265 +4,163 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="485e3122-4eac-424e-8a7b-1105b55da0ce" name="Changes" comment="se ajusto el readme">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PRUEBA-SETI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="bb4d9651-6007-4022-9264-27d06bef66ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="prueba-setti" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="prueba-setti" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="prueba-setti" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
-        <option value="Interface" />
-        <option value="Record" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="feature/pruebas-unitarias" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="feature/pruebas-unitarias" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;camano&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/camano/PRUEBA-SETI.git&quot;,
-    &quot;accountId&quot;: &quot;7881fe79-2ef3-4819-b878-1fe71b60b803&quot;
-  }
-}</component>
-  <component name="McpProjectServerCommands">
-    <commands />
-    <urls />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="38XtjQDmJEFj2mxp2s43Ub0zdG4" />
+  <component name="ProjectId" id="38xcbdJnGGGvzF9lkJJIxlzFL77" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.SetiApplication.executor": "Run",
-    "JUnit.BranchServiceTest.shouldCreateBranchSuccessfully.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenBranchNotFound.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenFranchiseNotFound.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenNameIsBlank.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenSaveFails.executor": "Run",
-    "JUnit.BranchServiceTest.shouldFailWhenSequenceFails.executor": "Run",
-    "JUnit.BranchServiceTest.shouldUpdateBranchNameSuccessfully.executor": "Run",
-    "JUnit.FranchiseControllerTest.shouldCreateFranchiseSuccessfully.executor": "Run",
-    "JUnit.FranchiseControllerTest.shouldUpdateFranchiseNameSuccessfully.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldCreateFranchiseSuccessfully.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldFailWhenFranchiseNotFound.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldFailWhenNameIsEmpty.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldFailWhenRepositoryFails.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldFailWhenSequenceGeneratorFails.executor": "Run",
-    "JUnit.FranchiseServiceTest.shouldUpdateFranchiseNameSuccessfully.executor": "Run",
-    "JUnit.ProductServiceTest.shouldCreateProductSuccessfully.executor": "Run",
-    "JUnit.ProductServiceTest.shouldDeleteProductSuccessfully.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenBranchNotFound.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenDeleteFails.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenNameIsBlank.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenProductNotFound.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenProductNotFound2.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenProductNotFound3.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenSaveFails.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenSequenceFails.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenStockIsNegative.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenUpdateFails.executor": "Run",
-    "JUnit.ProductServiceTest.shouldFailWhenUpdateFails2.executor": "Run",
-    "JUnit.ProductServiceTest.shouldUpdateProductNameSuccessfully.executor": "Run",
-    "JUnit.ProductServiceTest.shouldUpdateStockSuccessfully.executor": "Run",
-    "JUnit.StockServiceTest.shouldReturnEmptyWhenFranchiseHasNoBranches.executor": "Run",
-    "JUnit.StockServiceTest.shouldReturnTopStockProductPerBranch.executor": "Run",
-    "JUnit.StockServiceTest.shouldSkipBranchWithoutProducts.executor": "Run",
-    "Maven.SETI [clean].executor": "Run",
-    "Maven.SETI [install].executor": "Run",
-    "Maven.SETI [mvn,clean,mvn...].executor": "Run",
-    "Maven.SETI [mvn,clean,test].executor": "Run",
-    "Maven.SETI [mvn,dependency:tree,|,grep...].executor": "Run",
-    "Maven.SETI [mvn...].executor": "Run",
-    "Maven.SETI [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
-    "Maven.SETI [package].executor": "Run",
-    "Maven.SETI [test].executor": "Run",
+    "Gradle.Build prueba-setti2.executor": "Run",
+    "Gradle.prueba-setti2 [build].executor": "Run",
+    "Gradle.prueba-setti2 [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
+    "Spring Boot.MainApplication.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DEV/PRUEBA-SETI",
+    "last_opened_file_path": "D:/DEV/prueba-setti2",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DEV\PRUEBA-SETI\SETI" />
+      <recent name="D:\DEV\prueba-setti2" />
+      <recent name="D:\DEV\prueba-setti2\applications\app-service\src\main\resources" />
+      <recent name="D:\DEV\prueba-setti2\deployment" />
+      <recent name="D:\DEV\prueba-setti2\infrastructure\entry-points\api-rest\src\main\java\co\com\bancolombia\api\controller" />
+      <recent name="D:\DEV\prueba-setti2\domain\model\src\main\java\co\com\bancolombia\model\exception" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.prueba.SETI.application.api.controller" />
-      <recent name="com.prueba.SETI.application.service" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="co.com.bancolombia.model.product" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SetiApplication">
-    <configuration name="SetiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.SetiApplication" />
-      <module name="SETI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.api.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FranchiseControllerTest.shouldCreateFranchiseSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SETI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.api.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.prueba.SETI.application.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.application.api.controller.FranchiseControllerTest" />
-      <option name="METHOD_NAME" value="shouldCreateFranchiseSuccessfully" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FranchiseControllerTest.shouldUpdateFranchiseNameSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SETI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.api.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.prueba.SETI.application.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.application.api.controller.FranchiseControllerTest" />
-      <option name="METHOD_NAME" value="shouldUpdateFranchiseNameSuccessfully" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockServiceTest.shouldReturnEmptyWhenFranchiseHasNoBranches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SETI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.prueba.SETI.application.service" />
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.application.service.StockServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnEmptyWhenFranchiseHasNoBranches" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockServiceTest.shouldReturnTopStockProductPerBranch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SETI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prueba.SETI.application.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.prueba.SETI.application.service" />
-      <option name="MAIN_CLASS_NAME" value="com.prueba.SETI.application.service.StockServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnTopStockProductPerBranch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SETI [mvn,clean,test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="cmdOptions" />
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="mvn" />
-                <option value="clean" />
-                <option value="test" />
-              </list>
-            </option>
-            <option name="multimoduleDir" />
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/SETI" />
-          </MavenRunnerParameters>
+  <component name="RunManager" selected="Spring Boot.MainApplication">
+    <configuration name="prueba-setti2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
         </option>
-      </MavenSettings>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Application.SetiApplication" />
-      <item itemvalue="JUnit.FranchiseControllerTest.shouldCreateFranchiseSuccessfully" />
-      <item itemvalue="JUnit.FranchiseControllerTest.shouldUpdateFranchiseNameSuccessfully" />
-      <item itemvalue="JUnit.StockServiceTest.shouldReturnEmptyWhenFranchiseHasNoBranches" />
-      <item itemvalue="JUnit.StockServiceTest.shouldReturnTopStockProductPerBranch" />
-      <item itemvalue="Maven.SETI [mvn,clean,test]" />
-    </list>
+    <configuration name="prueba-setti2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="prueba-setti.app-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.com.bancolombia.MainApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.com.bancolombia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SetiApplication" />
-        <item itemvalue="JUnit.FranchiseControllerTest.shouldUpdateFranchiseNameSuccessfully" />
-        <item itemvalue="JUnit.FranchiseControllerTest.shouldCreateFranchiseSuccessfully" />
-        <item itemvalue="JUnit.StockServiceTest.shouldReturnTopStockProductPerBranch" />
-        <item itemvalue="JUnit.StockServiceTest.shouldReturnEmptyWhenFranchiseHasNoBranches" />
+        <item itemvalue="Spring Boot.MainApplication" />
+        <item itemvalue="Gradle.prueba-setti2 [build]" />
+        <item itemvalue="Gradle.prueba-setti2 [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -275,76 +173,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="485e3122-4eac-424e-8a7b-1105b55da0ce" name="Changes" comment="" />
-      <created>1768957877564</created>
+      <changelist id="bb4d9651-6007-4022-9264-27d06bef66ec" name="Changes" comment="" />
+      <created>1769744747044</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1768957877564</updated>
+      <updated>1769744747044</updated>
     </task>
-    <task id="LOCAL-00001" summary="se subio el docker">
-      <option name="closed" value="true" />
-      <created>1769034691919</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1769034691919</updated>
-    </task>
-    <task id="LOCAL-00002" summary="se subio el readme y swagger con la documentacion">
-      <option name="closed" value="true" />
-      <created>1769040406135</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1769040406135</updated>
-    </task>
-    <task id="LOCAL-00003" summary="se subio el readme y swagger con la documentacion">
-      <option name="closed" value="true" />
-      <created>1769041909518</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1769041909518</updated>
-    </task>
-    <task id="LOCAL-00004" summary="se subieron las pruebas unitarias">
-      <option name="closed" value="true" />
-      <created>1769047843472</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1769047843472</updated>
-    </task>
-    <task id="LOCAL-00005" summary="se subieron las pruebas unitarias">
-      <option name="closed" value="true" />
-      <created>1769049909262</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1769049909262</updated>
-    </task>
-    <task id="LOCAL-00006" summary="se ajusto el readme">
-      <option name="closed" value="true" />
-      <created>1769049980774</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1769049980774</updated>
-    </task>
-    <task id="LOCAL-00007" summary="se ajusto el readme">
-      <option name="closed" value="true" />
-      <created>1769050090552</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1769050090552</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="se subio el docker" />
-    <MESSAGE value="se subio el readme y swagger con la documentacion" />
-    <MESSAGE value="se subieron las pruebas unitarias" />
-    <MESSAGE value="se ajusto el readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="se ajusto el readme" />
   </component>
 </project>
