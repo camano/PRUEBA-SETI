@@ -15,7 +15,7 @@ El proyecto implementa:
 
 ## Aclaracion ramas
 - main es la rama con la arquitectura pero sin el plugins - esta tiene pruebas unitarias
-- pruebav2 es la rama con la arquitectura con el plugin de bancolombia 
+- plugin es la rama con la arquitectura con el plugin de bancolombia 
 
 ## 🗂️ Estructura del proyecto
 src/
