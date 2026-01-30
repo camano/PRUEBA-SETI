@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>branchController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SETI</a> &gt; <a href="index.source.html" class="el_package">com.prueba.SETI.infrastructure.entryPoint.apiRest.controller</a> &gt; <span class="el_source">branchController.java</span></div><h1>branchController.java</h1><pre class="source lang-java linenums">package com.prueba.SETI.infrastructure.entryPoint.apiRest.controller;
+
+import com.prueba.SETI.domain.model.branch.Branch;
+import com.prueba.SETI.domain.useCase.addbranch.AddBranchUseCase;
+import com.prueba.SETI.domain.useCase.updatenamebranch.UpdateNameBranchUseCase;
+import com.prueba.SETI.infrastructure.entryPoint.apiRest.request.CreateBranchRequest;
+import com.prueba.SETI.infrastructure.entryPoint.apiRest.request.UpdateNameRequest;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.*;
+import reactor.core.publisher.Mono;
+
+@RestController
+@RequestMapping(&quot;/api/branch&quot;)
+<span class="nc" id="L15">@RequiredArgsConstructor</span>
+<span class="nc" id="L16">@Slf4j</span>
+public class branchController {
+
+    private final AddBranchUseCase addBranchUseCase;
+    private final UpdateNameBranchUseCase updateNameBranchUseCase;
+
+    @PostMapping(&quot;/add/{franchiseId}/branches&quot;)
+    public Mono&lt;Branch&gt; createBranch(
+            @PathVariable String franchiseId,
+            @RequestBody CreateBranchRequest request) {
+
+<span class="nc" id="L27">        log.info(&quot;Creando sucursal [{}] para franquicia [{}]&quot;, request.name(), franchiseId);</span>
+
+<span class="nc" id="L29">        return addBranchUseCase.execute(franchiseId, request.name())</span>
+<span class="nc" id="L30">                .doOnSuccess(branch -&gt; log.info(&quot;Sucursal creada con id [{}]&quot;, branch.getId()))</span>
+<span class="nc" id="L31">                .doOnError(e -&gt; log.error(&quot;Error creando sucursal&quot;, e));</span>
+    }
+
+    @PatchMapping(&quot;/{branchId}/name&quot;)
+    public Mono&lt;Branch&gt; updateName(@PathVariable String branchId, @RequestBody UpdateNameRequest request) {
+<span class="nc" id="L36">        log.info(&quot;Actualizando nombre de sucursal [{}]&quot;, branchId);</span>
+
+<span class="nc" id="L38">        return updateNameBranchUseCase.execute(branchId, request.name())</span>
+<span class="nc" id="L39">                .doOnSuccess(b -&gt; log.info(&quot;Nuevo nombre [{}] para sucursal [{}]&quot;, b.getName(), branchId))</span>
+<span class="nc" id="L40">                .doOnError(e -&gt; log.error(&quot;Error actualizando sucursal&quot;, e));</span>
+
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

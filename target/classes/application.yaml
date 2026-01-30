@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: SETI
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/seti_db
+    username: postgres
+    password: root
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+
+logging:
+  level:
+    org.springframework.r2dbc.core: DEBUG
+    io.r2dbc.postgresql.QUERY: DEBUG

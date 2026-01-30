@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SequenceGeneratorAdapter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SETI</a> &gt; <a href="index.source.html" class="el_package">com.prueba.SETI.infrastructure.adapter.persistence.adapter</a> &gt; <span class="el_source">SequenceGeneratorAdapter.java</span></div><h1>SequenceGeneratorAdapter.java</h1><pre class="source lang-java linenums">package com.prueba.SETI.infrastructure.adapter.persistence.adapter;
+
+import com.prueba.SETI.domain.model.Sequence.gateway.SequenceGeneratorPort;
+import lombok.RequiredArgsConstructor;
+import org.springframework.r2dbc.core.DatabaseClient;
+import org.springframework.stereotype.Component;
+import reactor.core.publisher.Mono;
+
+@Component
+<span class="nc" id="L10">@RequiredArgsConstructor</span>
+public class SequenceGeneratorAdapter
+        implements SequenceGeneratorPort {
+
+    private final DatabaseClient databaseClient;
+
+
+
+    @Override
+    public Mono&lt;String&gt; nextFranchiseId() {
+<span class="nc" id="L20">        return next(&quot;franchise&quot;, &quot;f-&quot;);</span>
+    }
+
+    @Override
+    public Mono&lt;String&gt; nextBranchId() {
+<span class="nc" id="L25">        return next(&quot;branch&quot;, &quot;b-&quot;);</span>
+    }
+
+    @Override
+    public Mono&lt;String&gt; nextProductId() {
+<span class="nc" id="L30">        return next(&quot;product&quot;, &quot;p-&quot;);</span>
+    }
+
+    private Mono&lt;String&gt; next(String name, String prefix) {
+
+<span class="nc" id="L35">        return databaseClient.sql(&quot;&quot;&quot;</span>
+            UPDATE sequences
+            SET value = value + 1
+            WHERE name = :name
+            RETURNING value
+        &quot;&quot;&quot;)
+<span class="nc" id="L41">                .bind(&quot;name&quot;, name)</span>
+<span class="nc" id="L42">                .map(row -&gt; row.get(&quot;value&quot;, Long.class))</span>
+<span class="nc" id="L43">                .one()</span>
+<span class="nc" id="L44">                .map(value -&gt; prefix + value);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

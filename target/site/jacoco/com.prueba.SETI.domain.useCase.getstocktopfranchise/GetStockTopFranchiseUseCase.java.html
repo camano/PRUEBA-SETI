@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GetStockTopFranchiseUseCase.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SETI</a> &gt; <a href="index.source.html" class="el_package">com.prueba.SETI.domain.useCase.getstocktopfranchise</a> &gt; <span class="el_source">GetStockTopFranchiseUseCase.java</span></div><h1>GetStockTopFranchiseUseCase.java</h1><pre class="source lang-java linenums">package com.prueba.SETI.domain.useCase.getstocktopfranchise;
+
+
+import com.prueba.SETI.domain.model.branch.Branch;
+import com.prueba.SETI.domain.model.branch.gateway.BranchRepositoryPort;
+import com.prueba.SETI.domain.model.product.Product;
+import com.prueba.SETI.domain.model.product.gateway.ProductRepositoryPort;
+import com.prueba.SETI.infrastructure.entryPoint.apiRest.response.ProductStockResponse;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+@Service
+<span class="fc" id="L14">@RequiredArgsConstructor</span>
+public class GetStockTopFranchiseUseCase {
+    private final BranchRepositoryPort branchRepositoryPort;
+    private final ProductRepositoryPort productRepositoryPort;
+    public Flux&lt;ProductStockResponse&gt; execute(String franchiseId) {
+
+<span class="fc" id="L20">        return branchRepositoryPort.findByFranchiseId(franchiseId)</span>
+<span class="fc" id="L21">                .flatMap(branch -&gt;</span>
+<span class="fc" id="L22">                        Mono.zip(</span>
+<span class="fc" id="L23">                                Mono.just(branch),</span>
+                                productRepositoryPort
+<span class="fc" id="L25">                                        .findTopByBranchIdOrderByStockDesc(branch.getId())</span>
+<span class="fc" id="L26">                                        .switchIfEmpty(Mono.empty())</span>
+                        )
+                )
+<span class="pc bpc" id="L29" title="1 of 2 branches missed.">                .filter(tuple -&gt; tuple.getT2() != null)</span>
+<span class="fc" id="L30">                .map(tuple -&gt; {</span>
+<span class="fc" id="L31">                    Branch branch = tuple.getT1();</span>
+<span class="fc" id="L32">                    Product product = tuple.getT2();</span>
+<span class="fc" id="L33">                    return new ProductStockResponse(</span>
+<span class="fc" id="L34">                            branch.getId(),</span>
+<span class="fc" id="L35">                            branch.getName(),</span>
+<span class="fc" id="L36">                            product.getId(),</span>
+<span class="fc" id="L37">                            product.getName(),</span>
+<span class="fc" id="L38">                            product.getStock()</span>
+                    );
+                });
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

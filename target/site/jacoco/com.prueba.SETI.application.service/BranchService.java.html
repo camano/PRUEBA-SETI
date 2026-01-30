@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BranchService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SETI</a> &gt; <a href="index.source.html" class="el_package">com.prueba.SETI.application.service</a> &gt; <span class="el_source">BranchService.java</span></div><h1>BranchService.java</h1><pre class="source lang-java linenums">package com.prueba.SETI.application.service;
+
+import com.prueba.SETI.infrastructure.helper.exception.NotFoundException;
+import com.prueba.SETI.domain.model.branch.Branch;
+import com.prueba.SETI.domain.model.branch.gateway.BranchRepositoryPort;
+import com.prueba.SETI.domain.model.franchise.gateway.FranchiseRepositoryPort;
+import com.prueba.SETI.domain.model.Sequence.gateway.SequenceGeneratorPort;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
+
+@Service
+<span class="fc" id="L14">@RequiredArgsConstructor</span>
+<span class="fc" id="L15">@Slf4j</span>
+public class BranchService {
+    private final FranchiseRepositoryPort franchiseRepository;
+    private final BranchRepositoryPort branchRepository;
+    private final SequenceGeneratorPort sequenceGeneratorPort;
+
+    public Mono&lt;Branch&gt; execute(String franchiseId, String branchName) {
+
+<span class="fc" id="L23">        return franchiseRepository.findById(franchiseId)</span>
+<span class="fc" id="L24">                .switchIfEmpty(Mono.error(new NotFoundException(&quot;Franchise not found&quot;)))</span>
+<span class="fc" id="L25">                .doOnSubscribe(s -&gt; log.info(&quot;Creando sucursal [{}] para franquicia [{}]&quot;, branchName, franchiseId))</span>
+<span class="fc" id="L26">                .flatMap(franchise -&gt;</span>
+<span class="fc" id="L27">                        sequenceGeneratorPort.nextBranchId()</span>
+<span class="fc" id="L28">                                .map(branchId -&gt; new Branch(branchId, branchName))</span>
+<span class="fc" id="L29">                                .flatMap(branch -&gt; branchRepository.save(franchiseId, branch))</span>
+                )
+<span class="fc" id="L31">                .doOnNext(branch -&gt;log.info(&quot;Sucursal creada con id [{}]&quot;, branch.getId()))</span>
+<span class="fc" id="L32">                .doOnError(error -&gt; log.error(&quot;Error creando sucursal&quot;, error));</span>
+    }
+
+    public Mono&lt;Branch&gt; updateBranchName(String branchId, String newName) {
+
+<span class="pc bpc" id="L37" title="1 of 4 branches missed.">        if (newName == null || newName.isBlank()) {</span>
+<span class="fc" id="L38">            return Mono.error(new IllegalArgumentException(&quot;sucursal name cannot be empty&quot;));</span>
+        }
+
+<span class="fc" id="L41">        return branchRepository.findById(branchId)</span>
+<span class="fc" id="L42">                .switchIfEmpty(Mono.error(new NotFoundException(&quot;sucursal not found&quot;)))</span>
+<span class="fc" id="L43">                .flatMap(franchise -&gt; branchRepository.updateName(branchId, newName))</span>
+<span class="fc" id="L44">                .doOnSubscribe(s -&gt; log.info(&quot;Actualizando nombre de sucursal [{}]&quot;, branchId))</span>
+<span class="fc" id="L45">                .doOnNext(f -&gt; log.info(&quot;Nuevo nombre [{}] para sucursal [{}]&quot;, f.getName(), branchId))</span>
+<span class="fc" id="L46">                .doOnError(e -&gt; log.error(&quot;Error actualizando sucursal&quot;, e));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

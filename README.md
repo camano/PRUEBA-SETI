@@ -12,20 +12,13 @@ El proyecto implementa:
 
 ---
 
+## Aclaraciones ramas
+
+- main rama con la arquitectura sin plugin 
+- plugin es la arquitectura con el plugin 
+
 ## 🗂️ Estructura del proyecto
-src/
-├─ main/
-│ ├─ java/com/prueba/seti/
-│ │ ├─ domain/ # Modelos y lógica de negocio
-│ │ ├─ service/ # Casos de uso (UseCases)
-│ │ ├─ adapter/ # Puertos de persistencia / R2DBC
-│ │ ├─ controller/ # Endpoints REST
-│ │ └─ config/ # Configuraciones (Swagger, R2DBC)
-│ └─ resources/
-│ ├─ application.yml # Configuración de base de datos y logs
-└─ test/
-└─ java/com/prueba/seti/
-└─ (Pruebas unitarias y de integración)
+Se esta utilizando la arquitectura https://bancolombia.github.io/scaffold-clean-architecture/docs/intro/
 
 
 ---
@@ -83,11 +76,44 @@ src/
 
 ---
 
-## Levantar Proyecto con docker compose
-- En la raiz se encuentra un documento para poder ejecutarlo en local o en mi drive https://docs.google.com/document/d/1TGNTwwl-Z49umd9js_GDggfskJdnzMV8MmZ7PhM7iFY/edit?usp=sharing
-- mvn clean install -- ejecuta el jar**
-- docker-compose up -- se ejecuta las imagenes de la base de datos y app**
-- En la raiz del proyecto encuentran la coleccion de postman
+## Consulta SQL 
+
+Esta es el schema para que pueda funcionar 
+
+CREATE DATABASE seti_db;
+
+CREATE TABLE IF NOT EXISTS franchises (
+id VARCHAR(20) PRIMARY KEY,
+name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS branches (
+id VARCHAR(20) PRIMARY KEY,
+franchise_id VARCHAR(20) NOT NULL,
+name VARCHAR(100) NOT NULL,
+CONSTRAINT fk_franchise
+FOREIGN KEY (franchise_id)
+REFERENCES franchises(id)
+);
+
+CREATE TABLE IF NOT EXISTS products (
+id VARCHAR(20) PRIMARY KEY,
+branch_id VARCHAR(20) NOT NULL,
+name VARCHAR(100) NOT NULL,
+stock INT NOT NULL,
+CONSTRAINT fk_branch
+FOREIGN KEY (branch_id)
+REFERENCES branches(id)
+);
+CREATE TABLE IF NOT EXISTS sequences (
+name VARCHAR(50) PRIMARY KEY,
+value BIGINT NOT NULL
+);
+
+INSERT INTO sequences (name, value)
+VALUES ('franchise', 0),('branch', 0),('product', 0)
+ON CONFLICT (name) DO NOTHING;
+
 
 
 

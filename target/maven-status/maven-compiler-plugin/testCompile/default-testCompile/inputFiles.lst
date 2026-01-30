@@ -1,0 +1,9 @@
+D:\DEV\PRUEBA-SETI\src\test\java\com\prueba\SETI\domain\useCase\addbranch\AddBranchUseCaseTest.java
+D:\DEV\PRUEBA-SETI\src\test\java\com\prueba\SETI\domain\useCase\AddFranchise\AddFranchiseUseCaseTest.java
+D:\DEV\PRUEBA-SETI\src\test\java\com\prueba\SETI\domain\useCase\getstocktopfranchise\GetStockTopFranchiseUseCaseTest.java
+D:\DEV\PRUEBA-SETI\src\test\java\com\prueba\SETI\domain\useCase\updatenamebranch\UpdateNameBranchUseCaseTest.java
+D:\DEV\PRUEBA-SETI\src\test\java\com\prueba\SETI\domain\useCase\addproduct\AddProductUseCaseTest.java
+D:\DEV\PRUEBA-SETI\src\test\java\com\prueba\SETI\domain\useCase\updatenamefranchise\UpdateNameFranchiseUseCaseTest.java
+D:\DEV\PRUEBA-SETI\src\test\java\com\prueba\SETI\domain\useCase\updatenameproduct\UpdateNameProductUseCaseTest.java
+D:\DEV\PRUEBA-SETI\src\test\java\com\prueba\SETI\domain\useCase\updatestock\UpdateStockUseCaseTest.java
+D:\DEV\PRUEBA-SETI\src\test\java\com\prueba\SETI\domain\useCase\deleteproduct\DeleteProductUseCaseTest.java
